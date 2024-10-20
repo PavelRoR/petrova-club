@@ -1,8 +1,12 @@
 section#main
+	//- video(autoplay loop muted class="main-video" id="bgvideo")
+	//- 	<source src="video/main.mp4" type="video/mp4"></source>
 	.container
-		h1.main-title школа практической трансформации
-		.row
-			.col-md-7
-				p.main-text Клуб создан для тех, кто ищет учителя в эзотерике, желает углубить свои ​знания в мистических практиках и присоединиться к сообществу ​единомышленников для постоянного обучения и совершенствования.
-				a.button.button-up(href='#prices') Подробнее о клубе
-					+img('button-main-img', 'img/icons/arrow.svg', 'Стрелка')
+		.content
+			h1.main-title школа практической трансформации
+			.row
+				.col-md-7
+					p.main-text Клуб создан для тех, кто ищет учителя в эзотерике, желает углубить свои ​знания в мистических практиках и присоединиться к сообществу ​единомышленников для постоянного обучения и совершенствования.
+					a.button.button-up.button-main(href='#prices') Подробнее о клубе 
+						+img('button-main-img', 'img/icons/arrow.svg', 'Стрелка')
+						//- +img('button-main-img-star', 'img/icons/star.svg', 'Звезда')

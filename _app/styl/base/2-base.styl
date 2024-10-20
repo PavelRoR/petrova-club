@@ -5,12 +5,14 @@
 body
 	font-size: 20px
 	font-family: C
-	color #525050
-	background-color #fff
+	color #fff
+	background-color #1B0A08
 	line-height: 1.1
 	@media screen and (max-width 560px)
 		font-size: 16px
 .wrapper
+	background: #1B0A08 url(../img/backs/back.png) no-repeat top center
+	background-size: cover
 	overflow hidden
 .content
 	position relative
@@ -67,52 +69,54 @@ footer
 		bottom 0
 		cursor pointer
 		margin 0 auto
-.button
-	&-wrapper
-		text-align center
-	display inline-block
-	text-align center
-	margin 0 auto
-	text-decoration none
-	color: #fff
-	width: auto
-	border-radius: 50px
-	font-family: I
+p
+	margin 0
 	font-size: 30px
-	font-weight: bold
-	padding 27px 90px
-	border 3px solid
-	@media screen and (max-width 991px)
-		padding 27px 60px
-	@media screen and (max-width 560px)
-		padding 13px 45px
-		font-size: 20px
-	&:focus
-		text-decoration none
-		color #fff
-	&:hover
-		text-decoration none
-		color #fff
-	&-black
-		color #000
-		&:focus
-			text-decoration none
-			color #000
-		&:hover
-			text-decoration none
-			color #000
-@media screen and (max-width 991px)
-	.d-none.button-black
-		display inline-block !important
-		width 100%
-		max-width 386px
+// .button
+// 	&-wrapper
+// 		text-align center
+// 	display inline-block
+// 	text-align center
+// 	margin 0 auto
+// 	text-decoration none
+// 	color: #fff
+// 	width: auto
+// 	border-radius: 50px
+// 	font-family: I
+// 	font-size: 30px
+// 	font-weight: bold
+// 	padding 27px 90px
+// 	border 3px solid
+// 	@media screen and (max-width 991px)
+// 		padding 27px 60px
+// 	@media screen and (max-width 560px)
+// 		padding 13px 45px
+// 		font-size: 20px
+// 	&:focus
+// 		text-decoration none
+// 		color #fff
+// 	&:hover
+// 		text-decoration none
+// 		color #fff
+// 	&-black
+// 		color #000
+// 		&:focus
+// 			text-decoration none
+// 			color #000
+// 		&:hover
+// 			text-decoration none
+// 			color #000
+// @media screen and (max-width 991px)
+// 	.d-none.button-black
+// 		display inline-block !important
+// 		width 100%
+// 		max-width 386px
 .general-title
-	text-align center
-	font-size: 50px
-	font-weight: 900
-	margin-bottom: 35px
-	color #459799
+	font-family: D
+	font-size: 45px
 	text-transform uppercase
+	margin-bottom: 80px
+	text-align center
 	@media screen and (max-width 991px)
 		font-size: 40px
 	@media screen and (max-width 560px)
@@ -126,11 +130,26 @@ footer
 		@media screen and (max-width 560px)
 			margin-bottom: 20px
 .general-list
-	padding-left: 30px
+	// padding-left: 30px
+	list-style none
 	li
-		margin-bottom: 20px
-		&:last-child
-			margin-bottom: 0
+		font-size: 30px
+		position relative
+		padding-left: 25px
+		margin-bottom: 5px
+		&:before
+			content: ''
+			display block
+			position absolute
+			top 14px
+			left 0
+			border-radius: 50%
+			width 6px
+			height: 6px
+			background: #fff
+		// margin-bottom: 10px
+		// &:last-child
+		// 	margin-bottom: 0
 .d-none
 	display none !important
 	@media screen and (max-width 991px)

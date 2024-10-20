@@ -1,9 +1,10 @@
 section#author
 	.my-container
 		.my-container-items.my-container-items-author
-			+img('.my-container-items-img', 'img/images/petrova.png', 'Анастасия Петрова')
-			.my-container-item.my-container-item-for
-				h4.my-container-title
+			.my-container-item
+				+img('.my-container-items-img', 'img/images/petrova.png', 'Анастасия Петрова')
+			.my-container-item.my-container-item-grad.my-container-item-author
+				h4.my-container-item-title
 					small Ведущая клуба
 					| АНАСТАСИЯ ПЕТРОВА
 				ul.general-list
@@ -12,3 +13,19 @@ section#author
 					li Обучила за последние 5 лет, более 4500 человек, ​получивших новую профессию, и помогающих людям ​по всему миру.
 					li Расстановщик, наставник, экстрасенс, психолог по ​направлению формирования конфликтологической ​компетентности.
 					li Участница знаменитой поляны битвы экстрасенсов - ​23 сезона.
+		+gt('', 'ВХОД В КЛУБ ЗАКРОЕТСЯ ЧЕРЕЗ')
+		<div class="countdown" id="countdown">
+		<div class="countdown-item">
+			<span class="hours">00</span>
+		</div>
+		.dividers
+			span :
+		<div class="countdown-item">
+			<span class="minutes">00</span>
+		</div>
+		.dividers
+			span :
+		<div class="countdown-item">
+			<span class="seconds">00</span>
+		</div>
+		</div>
