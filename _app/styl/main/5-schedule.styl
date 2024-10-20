@@ -1,0 +1,113 @@
+.schedule
+	padding 80px 0
+	@media screen and (max-width 767px)
+		padding 60px 0
+	@media screen and (max-width 560px)
+		padding: 40px 0
+// .content-experts
+// 	width 3300px !important
+// 	margin 0 auto
+.expert
+	&s
+		width 90%
+		margin 0 auto
+		position relative
+		left 0
+		right 0
+		@media screen and (max-width 991px)
+			padding-top: 50px
+			width 100%
+	display flex
+	flex-direction: row
+	align-items: flex-start
+	justify-content: space-between
+	width 100%
+	@media screen and (max-width 991px)
+		flex-direction: column
+	&-img
+		display block
+		width 100%
+		max-width 470px
+		margin 0 45px 0 0
+		@media screen and (max-width 991px)
+			margin 0 0 20px
+	&-text
+		margin-bottom: 15px
+		span
+			color #459799
+		&-bq
+			margin-top: 25px
+			font-style: italic
+		a
+			&:focus
+			&:hover
+				color inherit
+				text-decoration none
+			&:hover
+				text-decoration underline
+	&-info
+		width 100%
+.owl-carousel.owl-theme.experts .owl-nav
+	position: absolute
+	left 0
+	right 0
+	margin 0 auto
+	top calc(50% - 24px)
+	@media screen and (max-width 991px)
+		top 0
+.owl-carousel.owl-theme.experts .owl-prev
+	position absolute
+	left -60px
+	top 0
+	width 50px
+	height: 25px
+	background: transparent url(../img/icons/next.svg) no-repeat center
+	background-size: contain
+	transform: rotate(180deg)
+	@media screen and (max-width 991px)
+		left 30%
+	span
+		display none !important
+.owl-carousel.owl-theme.experts .owl-next
+	position absolute
+	right -60px
+	top 0
+	width 50px
+	height: 25px
+	background: transparent url(../img/icons/next.svg) no-repeat center
+	background-size: contain
+	@media screen and (max-width 991px)
+		right 30%
+	span
+		display none !important
+.next-text
+	text-align center
+	font-size: 16px
+	color #459799
+.schedule-body
+	.experts
+		width 100%
+		@media screen and (max-width: 991px)
+			padding-top: 0
+	.expert
+		margin-bottom: 70px
+		@media screen and (max-width 767px)
+			margin-bottom: 50px
+		&:last-of-type
+			margin-bottom: 0
+	.next-text 
+		display none !important
+.sch-buttons
+	margin-top: 70px
+	display flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+	@media screen and (max-width 1199px)
+		flex-direction: column
+		.button
+			margin-top: 35px
+	@media screen and (max-width 767px)
+		margin-top: 30px
+	@media screen and (max-width 560px)
+		margin-top: 0

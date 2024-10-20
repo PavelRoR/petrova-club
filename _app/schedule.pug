@@ -1,0 +1,46 @@
+-var path = '../';
+-var head_url = 'https://profit-club.mvacademy.ru/schedule/';
+-var head_title = '«Клуб-профит»';
+-var head_description = 'Расписание выступлений спикеров';
+//-var head_img = 'img/banner.jpg';
+-var styles = path+'css/sch.min.css';
+//-var fav_app = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+//-var libs = path+'js/libs.min.js';
+//-var scripts = path+'js/scripts.min.js';
+-var noref = true;
+//- -var action = '';
+//- -var group = '';
+//- -var formId = '';
+//- -var formVc = '';
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+-var ak = true;
+-var ah = true;
+-var href = '#prices';
+-var sch = true;
+
+
+mixin b(cl, href, p, target, id)
+	.button-wrapper
+		a.button(class=cl href!=href target=target id=id)!=p
+mixin gt(cl, h3)
+	h3.general-title(class=cl)!=h3
+mixin img(cl, src, alt)
+	img(class=cl src!=path+src alt!=alt)
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body.schedule-body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/main/4-schedule
+		include pug/base/2-footer
+		//- include pug/base/3-scripts
+		//- include pug/scripts/chat
+		<script src="https://shop.mastervision.su/?r=fp/admin/getformscript&id=31&vc=2634871a9a35d60968bf57aa036c0237&popup=1&hideButton=1"></script>
+		include pug/scripts/body_bottom_scripts

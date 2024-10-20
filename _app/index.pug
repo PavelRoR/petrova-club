@@ -1,0 +1,53 @@
+-var path = '';
+-var head_url = 'https://petrova-club.mvacademy.ru/';
+-var head_title = '«Школа практической трансформации»';
+// -var head_description = 'Сообщество для финансового роста и развития специалистов помогающих профессий в мягких нишах';
+//-var head_img = 'img/banner.jpg';
+-var styles = path+'css/styles.min.css';
+//-var fav_app = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var libs = path+'js/libs.min.js';
+-var scripts = path+'js/scripts.min.js';
+-var noref = true;
+//- -var action = '';
+//- -var group = '';
+//- -var formId = '';
+//- -var formVc = '';
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+-var ak = true;
+-var ah = true;
+-var href = '#prices';
+-var price1 = '';
+-var price2 = '';
+-var price3 = '';
+
+mixin b(cl, href, p, target, id)
+	.button-wrapper
+		a.button(class=cl href!=href target=target id=id)!=p
+mixin gt(cl, h3)
+	h3.general-title(class=cl)!=h3
+mixin img(cl, src, alt)
+	img(class=cl src!=src alt!=alt)
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/main/1-main
+			include pug/main/2-for
+			include pug/main/3-format
+			include pug/main/4-how
+			include pug/main/5-schedule
+			include pug/main/6-get
+			include pug/main/7-author
+			include pug/main/8-get-2
+		include pug/base/2-footer
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
