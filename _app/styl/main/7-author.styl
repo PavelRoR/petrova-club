@@ -1,7 +1,13 @@
 #author
 	padding 200px 0 50px
+	@media screen and (max-width 1199px)
+		padding 100px 0 50px
+	@media screen and (max-width 560px)
+		padding 60px 0
 .my-container-items-author
 	flex-direction: row-reverse
+	@media screen and (max-width 991px)
+		flex-direction: column
 .countdown
 	width 100%
 	display flex
@@ -13,8 +19,22 @@
 		font-size: 150px
 		line-height: 150px
 		color #fff
+		@media screen and (max-width 1199px)
+			font-size: 100px
+			line-height: inherit
+		@media screen and (max-width 991px)
+			font-size: 80px
+		@media screen and (max-width 560px)
+			font-size: 45px
 .dividers
 	font-family: D
 	font-size: 150px
 	line-height: 150px
 	color #fff
+	@media screen and (max-width 1199px)
+		font-size: 100px
+		line-height: inherit
+	@media screen and (max-width 991px)
+		font-size: 80px
+	@media screen and (max-width 560px)
+		font-size: 45px

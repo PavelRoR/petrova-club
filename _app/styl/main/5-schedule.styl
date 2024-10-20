@@ -1,10 +1,21 @@
 #schedule
 	padding 200px 0
+	@media screen and (max-width 1199px)
+		padding 100px 0
+	@media screen and (max-width 560px)
+		padding 60px 0
 .nav-tab-img
 	display none
+	@media screen and (max-width 767px)
+		width 80px
+		margin-right: 10px
+	@media screen and (max-width 560px)
+		width 60px
 .nav-tabs
 	margin-left: 80px
 	border-bottom: 0
+	@media screen and (max-width 991px)
+		margin-left: 0
 	& > li > a
 		font-size: 30px
 		font-weight: bold
@@ -16,6 +27,27 @@
 		text-transform uppercase
 		margin-right: 0
 		transition: all .3s ease
+		@media screen and (max-width 1199px)
+			font-size: 25px
+		@media screen and (max-width 767px)
+			display flex
+			flex-direction: row
+			align-items: center
+			justify-content: center
+			font-size: 25px
+			padding 20px 10px
+			color #D16A1E
+			position relative
+			width 70px
+			justify-content: flex-start
+			height: 146px
+			p
+				position absolute
+				transform: rotate(-90deg)
+				top 55px
+				right -20px
+				@media screen and (max-width 560px)
+					right -10px
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover
 	opacity 1
 	color #fff
@@ -23,11 +55,19 @@
 	border: 1px solid #186079
 	border-bottom-color #022044
 	transition: all .3s ease
+	color #D16A1E
+	@media screen and (max-width 767px)
+		width 140px
+		.nav-tab-img
+			display inline-block
+	@media screen and (max-width 560px)
+		width 121px
 .nav-tabs > li > a:hover
 	border: 1px solid #186079
 	border-bottom-color #022044
 	transition: all .3s ease
 	color #fff
+	color #D16A1E
 .nav > li > a:focus, .nav > li > a:hover
 	transition: all .3s ease
 	background-color: #022044
@@ -36,6 +76,14 @@
 	background: #022044 linear-gradient(to bottom, #022044 0%, #0B141B 100%)
 	border-radius: 15px
 	border: 1px solid #186079
+	@media screen and (max-width 1199px)
+		padding 0 40px 40px
+	@media screen and (max-width 991px)
+		border-radius: 0 15px 15px 15px
+	@media screen and (max-width 767px)
+		padding 30px
+	@media screen and (max-width 560px)
+		padding: 30px 20px
 .tab-pane-title
 	display flex
 	flex-direction: row
@@ -47,3 +95,15 @@
 		font-weight: bold
 		color #D16A1E
 		margin-left: 40px
+		@media screen and (max-width 1199px)
+			font-size: 30px
+			margin-left: 30px
+		@media screen and (max-width 767px)
+			margin-left: 0
+			margin-bottom: 20px
+		@media screen and (max-width 560px)
+			font-size: 24px
+			margin-bottom: 15px
+.tab-pane-title-img
+	@media screen and (max-width 767px)
+		display none
