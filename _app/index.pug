@@ -39,6 +39,8 @@ html(lang="ru")
 	body
 		include pug/scripts/body_top_scripts
 		.wrapper
+			video.main-video#bgvideo(autoplay loop muted)
+				source(src="video/main.mp4" type="video/mp4")
 			include pug/main/1-main
 			include pug/main/2-for
 			include pug/main/3-format

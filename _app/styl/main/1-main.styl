@@ -1,9 +1,9 @@
 #main
-	padding 150px 0 0
-	height: 1450px
+	padding 90px 0 350px
+	// height: 1450px
 	position relative
 	@media screen and (max-width 1199px)
-		padding 100px 0 200px
+		padding 90px 0 200px
 		height: auto
 		min-height 700px
 	@media screen and (max-width 991px)
@@ -12,7 +12,7 @@
 		padding 60px 0 280px
 .main-video
 	position absolute
-	top -100px
+	top 0
 	display block
 	z-index 0
 	left 0
@@ -20,9 +20,11 @@
 	bottom: 0
 	margin 0 auto
 	min-width: 100%;
-	min-height: 100%;
-	width: auto;
+	// min-height: 100%;
+	width: 100%;
 	height: auto;
+	@media screen and (max-width 991px)
+		display none
 .main-title
 	font-family: D
 	font-size: 70px

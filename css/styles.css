@@ -485,9 +485,15 @@ body {
   }
 }
 .wrapper {
-  background: #1b0a08 url("../img/backs/back.png") no-repeat top center;
+  background: #1b0a08 url("../img/backs/back-1.png") no-repeat top center;
   background-size: cover;
   overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 991px) {
+  .wrapper {
+    background-image: url("../img/backs/back-2.png");
+  }
 }
 @media screen and (max-width: 440px) {
   .wrapper {
@@ -654,13 +660,12 @@ p {
   }
 }
 #main {
-  padding: 150px 0 0;
-  height: 1450px;
+  padding: 90px 0 350px;
   position: relative;
 }
 @media screen and (max-width: 1199px) {
   #main {
-    padding: 100px 0 200px;
+    padding: 90px 0 200px;
     height: auto;
     min-height: 700px;
   }
@@ -677,7 +682,7 @@ p {
 }
 .main-video {
   position: absolute;
-  top: -100px;
+  top: 0;
   display: block;
   z-index: 0;
   left: 0;
@@ -685,9 +690,13 @@ p {
   bottom: 0;
   margin: 0 auto;
   min-width: 100%;
-  min-height: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
+}
+@media screen and (max-width: 991px) {
+  .main-video {
+    display: none;
+  }
 }
 .main-title {
   font-family: 'delagothicone', sans-serif;
@@ -763,6 +772,8 @@ p {
   max-width: 1190px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
+  z-index: 99;
 }
 @media screen and (max-width: 991px) {
   .my-container {
